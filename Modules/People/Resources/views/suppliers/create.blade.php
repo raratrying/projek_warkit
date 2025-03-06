@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Create Supplier')
+@section('title', 'Tambah Pemasok')
 
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
         <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('suppliers.index') }}">Suppliers</a></li>
-        <li class="breadcrumb-item active">Add</li>
+        <li class="breadcrumb-item"><a href="{{ route('suppliers.index') }}">Pemasok</a></li>
+        <li class="breadcrumb-item active">Tambah</li>
     </ol>
 @endsection
 
@@ -18,7 +18,7 @@
                 <div class="col-lg-12">
                     @include('utils.alerts')
                     <div class="form-group">
-                        <button class="btn btn-primary">Create Supplier <i class="bi bi-check"></i></button>
+                        <button class="btn btn-primary">Tambah Pemasok <i class="bi bi-check"></i></button>
                     </div>
                 </div>
                 <div class="col-lg-12">
@@ -27,7 +27,7 @@
                             <div class="form-row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="supplier_name">Supplier Name <span class="text-danger">*</span></label>
+                                        <label for="supplier_name">Nama Pemasok <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="supplier_name" required>
                                     </div>
                                 </div>
@@ -48,13 +48,13 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="city">City <span class="text-danger">*</span></label>
+                                        <label for="city">Kota <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="city" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="country">Country <span class="text-danger">*</span></label>
+                                        <label for="country">Negara <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="country" required>
                                     </div>
                                 </div>
@@ -63,7 +63,7 @@
                             <div class="form-row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label for="address">Address <span class="text-danger">*</span></label>
+                                        <label for="address">Alamat <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="address" required>
                                     </div>
                                 </div>

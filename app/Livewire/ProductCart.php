@@ -79,7 +79,7 @@ class ProductCart extends Component
         });
 
         if ($exists->isNotEmpty()) {
-            session()->flash('message', 'Product exists in the cart!');
+            session()->flash('message', 'Produk ada di keranjang!');
 
             return;
         }

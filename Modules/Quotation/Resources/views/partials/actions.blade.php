@@ -5,12 +5,12 @@
     <div class="dropdown-menu">
         @can('create_quotation_sales')
             <a href="{{ route('quotation-sales.create', $data) }}" class="dropdown-item">
-                <i class="bi bi-check2-circle mr-2 text-success" style="line-height: 1;"></i> Make Sale
+                <i class="bi bi-check2-circle mr-2 text-success" style="line-height: 1;"></i> Buat Penjualan
             </a>
         @endcan
         @can('send_quotation_mails')
             <a href="{{ route('quotation.email', $data) }}" class="dropdown-item">
-                <i class="bi bi-cursor mr-2 text-warning" style="line-height: 1;"></i> Send On Email
+                <i class="bi bi-cursor mr-2 text-warning" style="line-height: 1;"></i> Kirim ke Email
             </a>
         @endcan
         @can('edit_quotations')
@@ -20,16 +20,16 @@
         @endcan
         @can('show_quotations')
             <a href="{{ route('quotations.show', $data->id) }}" class="dropdown-item">
-                <i class="bi bi-eye mr-2 text-info" style="line-height: 1;"></i> Details
+                <i class="bi bi-eye mr-2 text-info" style="line-height: 1;"></i> Detail
             </a>
         @endcan
         @can('delete_quotations')
             <button id="delete" class="dropdown-item" onclick="
                 event.preventDefault();
-                if (confirm('Are you sure? It will delete the data permanently!')) {
+                if (confirm('Anda yakin? Ini akan menghapus data permanen!')) {
                 document.getElementById('destroy{{ $data->id }}').submit()
                 }">
-                <i class="bi bi-trash mr-2 text-danger" style="line-height: 1;"></i> Delete
+                <i class="bi bi-trash mr-2 text-danger" style="line-height: 1;"></i> Hapus
                 <form id="destroy{{ $data->id }}" class="d-none" action="{{ route('quotations.destroy', $data->id) }}" method="POST">
                     @csrf
                     @method('delete')

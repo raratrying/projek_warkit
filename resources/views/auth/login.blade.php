@@ -8,7 +8,7 @@
     <title>Login | {{ config('app.name') }}</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('images/favicon.png') }}">
+    <link rel="icon" href="{{ asset('images/icons.png') }}">
     <!-- CoreUI CSS -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
@@ -19,7 +19,7 @@
 <div class="container">
     <div class="row mb-3">
         <div class="col-12 d-flex justify-content-center">
-            <img width="200" src="{{ asset('images/logo-dark.png') }}" alt="Logo">
+            <img width="300" src="{{ asset('images/logowarkit.png') }}" alt="Logo">
         </div>
     </div>
     <div class="row justify-content-center">
@@ -34,7 +34,7 @@
                     <form id="login" method="post" action="{{ url('/login') }}">
                         @csrf
                         <h1>Login</h1>
-                        <p class="text-muted">Sign In to your account</p>
+                        <p class="text-muted">Masuk ke akun mu</p>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                     <span class="input-group-text">
@@ -74,18 +74,13 @@
                             </div>
                             <div class="col-8 text-right">
                                 <a class="btn btn-link px-0" href="{{ route('password.request') }}">
-                                    Forgot password?
+                                    Lupa password?
                                 </a>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-
-            <p class="text-center mt-5 lead">
-                Developed By
-                <a href="https://fahimanzam.netlify.app" class="font-weight-bold text-primary">Fahim Anzam Dip</a>
-            </p>
         </div>
     </div>
 </div>

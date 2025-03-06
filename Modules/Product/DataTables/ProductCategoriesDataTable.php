@@ -48,24 +48,28 @@ class ProductCategoriesDataTable extends DataTable
     protected function getColumns() {
         return [
             Column::make('category_code')
+                ->title(__('Kode Kategori'))  // Menggunakan terjemahan
                 ->addClass('text-center'),
-
+    
             Column::make('category_name')
+                ->title(__('Nama Kategori'))  // Menggunakan terjemahan
                 ->addClass('text-center'),
-
+    
             Column::make('products_count')
+                ->title(__('Jumlah Produk'))  // Menggunakan terjemahan
                 ->addClass('text-center'),
-
+    
             Column::computed('action')
+                ->title(__('Aksi'))  // Menggunakan terjemahan
                 ->exportable(false)
                 ->printable(false)
                 ->addClass('text-center'),
-
+    
             Column::make('created_at')
                 ->visible(false)
         ];
     }
-
+    
     protected function filename(): string {
         return 'ProductCategories_' . date('YmdHis');
     }

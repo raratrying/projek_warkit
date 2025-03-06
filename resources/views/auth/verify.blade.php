@@ -6,14 +6,12 @@
             <div class="col-md-8" style="margin-top: 2%">
                 <div class="card" style="width: 40rem;">
                     <div class="card-body">
-                        <h4 class="card-title">Verify Your Email Address</h4>
+                        <h4 class="card-title">Verifikasi alamat email mu</h4>
                         @if (session('resent'))
-                            <p class="alert alert-success" role="alert">A fresh verification link has been sent to
-                                your email address</p>
+                            <p class="alert alert-success" role="alert">Tautan verifikasi baru telah Dikirim ke alamat email anda</p>
                         @endif
-                        <p class="card-text">Before proceeding, please check your email for a verification link.If you
-                            did not receive the email,</p>
-                        <a href="{{ route('verification.resend') }}">click here to request another</a>.
+                        <p class="card-text">Sebelum memproses,harap periksa email anda untuk tautan verifikasi.Jika kamu tidak menerima email,</p>
+                        <a href="{{ route('verification.resend') }}">klik disini untuk meminta lagi</a>.
                     </div>
                 </div>
             </div>

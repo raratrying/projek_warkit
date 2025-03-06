@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Create Payment')
+@section('title', 'Tambah Pembayaran')
 
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
         <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('sales.index') }}">Sales</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('sales.index') }}">Penjualan</a></li>
         <li class="breadcrumb-item"><a href="{{ route('sales.show', $sale) }}">{{ $sale->reference }}</a></li>
-        <li class="breadcrumb-item active">Add Payment</li>
+        <li class="breadcrumb-item active">Tambah Pembayaran</li>
     </ol>
 @endsection
 
@@ -19,7 +19,7 @@
                 <div class="col-lg-12">
                     @include('utils.alerts')
                     <div class="form-group">
-                        <button class="btn btn-primary">Create Payment <i class="bi bi-check"></i></button>
+                        <button class="btn btn-primary">Tambah Pembayaran <i class="bi bi-check"></i></button>
                     </div>
                 </div>
                 <div class="col-lg-12">
@@ -28,13 +28,13 @@
                             <div class="form-row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="reference">Reference <span class="text-danger">*</span></label>
+                                        <label for="reference">Referensi <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="reference" required readonly value="INV/{{ $sale->reference }}">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="date">Date <span class="text-danger">*</span></label>
+                                        <label for="date">Tanggal <span class="text-danger">*</span></label>
                                         <input type="date" class="form-control" name="date" required value="{{ now()->format('Y-m-d') }}">
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@
                             <div class="form-row">
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="due_amount">Due Amount <span class="text-danger">*</span></label>
+                                        <label for="due_amount">Jumlah Jatuh Tempo <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="due_amount" required value="{{ format_currency($sale->due_amount) }}" readonly>
                                     </div>
                                 </div>

@@ -9,8 +9,8 @@
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
         <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('adjustments.index') }}">Adjustments</a></li>
-        <li class="breadcrumb-item active">Details</li>
+        <li class="breadcrumb-item"><a href="{{ route('adjustments.index') }}">Penyesuaian Stok</a></li>
+        <li class="breadcrumb-item active">Detail</li>
     </ol>
 @endsection
 
@@ -24,10 +24,10 @@
                             <table class="table table-bordered">
                                 <tr>
                                     <th colspan="2">
-                                        Date
+                                        Tanggal
                                     </th>
                                     <th colspan="2">
-                                        Reference
+                                        Referensi
                                     </th>
                                 </tr>
                                 <tr>
@@ -40,10 +40,10 @@
                                 </tr>
 
                                 <tr>
-                                    <th>Product Name</th>
-                                    <th>Code</th>
-                                    <th>Quantity</th>
-                                    <th>Type</th>
+                                    <th>Nama Produk</th>
+                                    <th>Kode</th>
+                                    <th>Jumlah</th>
+                                    <th>Tipe</th>
                                 </tr>
 
                                 @foreach($adjustment->adjustedProducts as $adjustedProduct)
@@ -53,9 +53,9 @@
                                         <td>{{ $adjustedProduct->quantity }}</td>
                                         <td>
                                             @if($adjustedProduct->type == 'add')
-                                                (+) Addition
+                                                (+) Menambahkan
                                             @else
-                                                (-) Subtraction
+                                                (-) Mengurangi
                                             @endif
                                         </td>
                                     </tr>

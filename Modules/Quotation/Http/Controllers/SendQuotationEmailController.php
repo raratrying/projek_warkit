@@ -24,7 +24,7 @@ class SendQuotationEmailController extends Controller
 
         } catch (\Exception $exception) {
             Log::error($exception);
-            toast('Something Went Wrong!', 'error');
+            toast('Ada Sesuatu Yang Salah!', 'error');
         }
 
         return back();

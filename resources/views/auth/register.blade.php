@@ -71,7 +71,7 @@
                                    placeholder="Confirm password">
                         </div>
                         <button type="submit" class="btn btn-primary btn-block btn-flat mb-3">Register</button>
-                        <a href="{{ route('login') }}" class="text-center">I already have a membership.</a>
+                        <a href="{{ route('login') }}" class="text-center">Saya sudah punya membership.</a>
                     </form>
                 </div>
             </div>

@@ -13,7 +13,7 @@
     @can('create_pos_sales')
     <li class="c-header-nav-item mr-3">
         <a class="btn btn-primary btn-pill {{ request()->routeIs('app.pos.index') ? 'disabled' : '' }}" href="{{ route('app.pos.index') }}">
-            <i class="bi bi-cart mr-1"></i> POS System
+            <i class="bi bi-cart mr-1"></i> WARKIT
         </a>
     </li>
     @endcan
@@ -31,15 +31,15 @@
         </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0">
             <div class="dropdown-header bg-light">
-                <strong>{{ $low_quantity_products->count() }} Notifications</strong>
+                <strong>{{ $low_quantity_products->count() }} Pemberitahuan</strong>
             </div>
             @forelse($low_quantity_products as $product)
                 <a class="dropdown-item" href="{{ route('products.show', $product->id) }}">
-                    <i class="bi bi-hash mr-1 text-primary"></i> Product: "{{ $product->product_code }}" is low in quantity!
+                    <i class="bi bi-hash mr-1 text-primary"></i> Produk: "{{ $product->product_code }}" Jumlahnya sedikit!
                 </a>
             @empty
                 <a class="dropdown-item" href="#">
-                    <i class="bi bi-app-indicator mr-2 text-danger"></i> No notifications available.
+                    <i class="bi bi-app-indicator mr-2 text-danger"></i> Tidak ada pemberitahuan yang tersedia.
                 </a>
             @endforelse
         </div>
@@ -58,9 +58,9 @@
             </div>
         </a>
         <div class="dropdown-menu dropdown-menu-right pt-0">
-            <div class="dropdown-header bg-light py-2"><strong>Account</strong></div>
+            <div class="dropdown-header bg-light py-2"><strong>Akun</strong></div>
             <a class="dropdown-item" href="{{ route('profile.edit') }}">
-                <i class="mfe-2  bi bi-person" style="font-size: 1.2rem;"></i> Profile
+                <i class="mfe-2  bi bi-person" style="font-size: 1.2rem;"></i> Profil
             </a>
             <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <i class="mfe-2  bi bi-box-arrow-left" style="font-size: 1.2rem;"></i> Logout

@@ -108,11 +108,11 @@
                                     <td class="right">{{ format_currency($purchase_return->tax_amount) }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="left"><strong>Shipping)</strong></td>
+                                    <td class="left"><strong>Pengiriman</strong></td>
                                     <td class="right">{{ format_currency($purchase_return->shipping_amount) }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="left"><strong>Grand Total</strong></td>
+                                    <td class="left"><strong>Jumlah Total</strong></td>
                                     <td class="right"><strong>{{ format_currency($purchase_return->total_amount) }}</strong></td>
                                 </tr>
                                 </tbody>
