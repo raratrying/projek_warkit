@@ -69,7 +69,7 @@ class QuotationController extends Controller
             Cart::instance('quotation')->destroy();
         });
 
-        toast('Penawaran Dibuat!', 'success');
+        toast('Penawaran Ditambah!', 'success');
 
         return redirect()->route('quotations.index');
     }

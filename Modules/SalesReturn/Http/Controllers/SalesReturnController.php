@@ -100,7 +100,7 @@ class SalesReturnController extends Controller
             }
         });
 
-        toast('Sale Return Created!', 'success');
+        toast('Pengembalian Penjualan Ditambah!', 'success');
 
         return redirect()->route('sale-returns.index');
     }

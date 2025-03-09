@@ -100,7 +100,7 @@ class SaleController extends Controller
             }
         });
 
-        toast('Sale Created!', 'success');
+        toast('Penjualan Ditambah!', 'success');
 
         return redirect()->route('sales.index');
     }

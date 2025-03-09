@@ -99,7 +99,7 @@ class PurchaseController extends Controller
             }
         });
 
-        toast('Purchase Created!', 'success');
+        toast('Pembelian Ditambah!', 'success');
 
         return redirect()->route('purchases.index');
     }

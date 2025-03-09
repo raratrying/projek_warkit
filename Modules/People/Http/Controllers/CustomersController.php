@@ -47,7 +47,7 @@ class CustomersController extends Controller
             'address'        => $request->address
         ]);
 
-        toast('Customer Created!', 'success');
+        toast('Pelanggan Ditambah!', 'success');
 
         return redirect()->route('customers.index');
     }

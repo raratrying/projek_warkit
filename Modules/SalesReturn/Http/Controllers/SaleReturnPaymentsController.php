@@ -72,7 +72,7 @@ class SaleReturnPaymentsController extends Controller
             ]);
         });
 
-        toast('Sale Return Payment Created!', 'success');
+        toast('Pembayaran Pengembalian Penjualan Ditambah!', 'success');
 
         return redirect()->route('sale-returns.index');
     }

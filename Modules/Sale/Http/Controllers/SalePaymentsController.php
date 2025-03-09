@@ -73,7 +73,7 @@ class SalePaymentsController extends Controller
             ]);
         });
 
-        toast('Sale Payment Created!', 'success');
+        toast('Pembayaran Penjualan Ditambah!', 'success');
 
         return redirect()->route('sales.index');
     }

@@ -100,7 +100,7 @@ class PurchasesReturnController extends Controller
             }
         });
 
-        toast('Purchase Return Created!', 'success');
+        toast('Pengembalian Pembelian Ditambah!', 'success');
 
         return redirect()->route('purchase-returns.index');
     }

@@ -39,7 +39,7 @@ class RolesController extends Controller
 
         $role->givePermissionTo($request->permissions);
 
-        toast('Role Created With Selected Permissions!', 'success');
+        toast('Peran Ditambah dengan izin yang dipilih!', 'success');
 
         return redirect()->route('roles.index');
     }

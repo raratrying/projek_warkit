@@ -47,7 +47,7 @@ class SuppliersController extends Controller
             'address'        => $request->address
         ]);
 
-        toast('Supplier Created!', 'success');
+        toast('Pemasok Ditambah!', 'success');
 
         return redirect()->route('suppliers.index');
     }
