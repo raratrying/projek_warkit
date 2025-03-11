@@ -69,7 +69,7 @@ class AdjustmentController extends Controller
             }
         });
 
-        toast('Penawaran Ditambah!', 'success');
+        toast('Penyesuaian Stok Ditambah!', 'success');
 
         return redirect()->route('adjustments.index');
     }
