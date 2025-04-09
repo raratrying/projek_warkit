@@ -61,7 +61,7 @@
     </li>
 @endcan
 
-@can('access_quotations')
+{{--@can('access_quotations')
     <li class="c-sidebar-nav-item c-sidebar-nav-dropdown {{ request()->routeIs('quotations.*') ? 'c-show' : '' }}">
         <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
             <i class="c-sidebar-nav-icon bi bi-cart-check" style="line-height: 1;"></i> Penawaran
@@ -81,7 +81,7 @@
             </li>
         </ul>
     </li>
-@endcan
+@endcan --}}
 
 @can('access_purchases')
     <li class="c-sidebar-nav-item c-sidebar-nav-dropdown {{ request()->routeIs('purchases.*') || request()->routeIs('purchase-payments*') ? 'c-show' : '' }}">
@@ -105,9 +105,9 @@
             </li>
         </ul>
     </li>
-@endcan
+@endcan 
 
-@can('access_purchase_returns')
+{{--@can('access_purchase_returns')
     <li class="c-sidebar-nav-item c-sidebar-nav-dropdown {{ request()->routeIs('purchase-returns.*') || request()->routeIs('purchase-return-payments.*') ? 'c-show' : '' }}">
         <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
             <i class="c-sidebar-nav-icon bi bi-arrow-return-right" style="line-height: 1;"></i> Pengembalian Pembelian
@@ -129,7 +129,7 @@
             </li>
         </ul>
     </li>
-@endcan
+@endcan--}}
 
 @can('access_sales')
     <li class="c-sidebar-nav-item c-sidebar-nav-dropdown {{ request()->routeIs('sales.*') || request()->routeIs('sale-payments*') ? 'c-show' : '' }}">
@@ -155,7 +155,7 @@
     </li>
 @endcan
 
-@can('access_sale_returns')
+{{-- @can('access_sale_returns')
     <li class="c-sidebar-nav-item c-sidebar-nav-dropdown {{ request()->routeIs('sale-returns.*') || request()->routeIs('sale-return-payments.*') ? 'c-show' : '' }}">
         <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
             <i class="c-sidebar-nav-icon bi bi-arrow-return-left" style="line-height: 1;"></i> Pengembalian Penjualan
@@ -177,7 +177,7 @@
             </li>
         </ul>
     </li>
-@endcan
+@endcan --}}
 
 @can('access_expenses')
     <li class="c-sidebar-nav-item c-sidebar-nav-dropdown {{ request()->routeIs('expenses.*') || request()->routeIs('expense-categories.*') ? 'c-show' : '' }}">
@@ -227,7 +227,7 @@
                         <i class="c-sidebar-nav-icon bi bi-people-fill" style="line-height: 1;"></i> Pemasok
                     </a>
                 </li>
-            @endcan
+            @endcan 
         </ul>
     </li>
 @endcan
@@ -258,7 +258,7 @@
                     <i class="c-sidebar-nav-icon bi bi-clipboard-data" style="line-height: 1;"></i> Laporan Pembelian
                 </a>
             </li>
-            <li class="c-sidebar-nav-item">
+            {{--<li class="c-sidebar-nav-item">
                 <a class="c-sidebar-nav-link {{ request()->routeIs('sales-return-report.index') ? 'c-active' : '' }}" href="{{ route('sales-return-report.index') }}">
                     <i class="c-sidebar-nav-icon bi bi-clipboard-data" style="line-height: 1;"></i> Laporan Pengembalian Penjualan
                 </a>
@@ -267,7 +267,7 @@
                 <a class="c-sidebar-nav-link {{ request()->routeIs('purchases-return-report.index') ? 'c-active' : '' }}" href="{{ route('purchases-return-report.index') }}">
                     <i class="c-sidebar-nav-icon bi bi-clipboard-data" style="line-height: 1;"></i> Laporan Pengembalian Pembelian
                 </a>
-            </li>
+            </li>--}}
         </ul>
     </li>
 @endcan

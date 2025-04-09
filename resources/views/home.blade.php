@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-3">
+            {{--<div class="col-md-6 col-lg-3">
                 <div class="card border-0">
                     <div class="card-body p-0 d-flex align-items-center shadow-sm">
                         <div class="bg-gradient-warning p-4 mfe-3 rounded-left">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>--}}
 
             <div class="col-md-6 col-lg-3">
                 <div class="card border-0">

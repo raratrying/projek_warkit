@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-        {{-- Sale Returns --}}
+        {{-- Sale Returns 
         <div class="col-12 col-lg-4">
             <div class="card border-0 shadow-sm">
                 <div class="card-body p-3 d-flex align-items-center">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--}}
         {{-- Profit --}}
         <div class="col-12 col-lg-4">
             <div class="card border-0 shadow-sm">
@@ -89,12 +89,12 @@
                     </div>
                     <div>
                         <div class="text-value text-primary">{{ format_currency($purchases_amount) }}</div>
-                        <div class="text-uppercase font-weight-bold small">{{ $total_purchases }} Penjualan</div>
+                        <div class="text-uppercase font-weight-bold small">{{ $total_purchases }} Pembelian</div>
                     </div>
                 </div>
             </div>
         </div>
-        {{-- Purchase Returns --}}
+        {{-- Purchase Returns 
         <div class="col-12 col-lg-4">
             <div class="card border-0 shadow-sm">
                 <div class="card-body p-3 d-flex align-items-center">
@@ -107,7 +107,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         {{-- Expenses --}}
         <div class="col-12 col-lg-4">
             <div class="card border-0 shadow-sm">
