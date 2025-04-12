@@ -25,9 +25,13 @@
 
                         <hr>
 
-                        <div class="table-responsive">
-                            {!! $dataTable->table() !!}
+                        <div class="container-fluid">
+                            <div class="table-responsive">
+                                {!! $dataTable->table(['class' => 'table table-bordered table-hover w-100'], true) !!}
+                            </div>
                         </div>
+                        
+                        
                     </div>
                 </div>
             </div>

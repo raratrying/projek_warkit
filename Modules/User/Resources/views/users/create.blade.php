@@ -85,7 +85,7 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="image">Gambar Profil <span class="text-danger">*</span></label>
+                                <label for="image"> Profil <span class="text-danger">*</span></label>
                                 <input id="image" type="file" name="image" data-max-file-size="500KB">
                             </div>
                         </div>
