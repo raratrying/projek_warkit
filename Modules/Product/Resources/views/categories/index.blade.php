@@ -3,7 +3,9 @@
 @section('title', 'Kategori Produk')
 
 @section('third_party_stylesheets')
+    <!-- CSS DataTables + Responsive -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css">
 @endsection
 
 @section('breadcrumb')
@@ -22,14 +24,12 @@
                 <div class="card">
                     <div class="card-body">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#categoryCreateModal">
+                        <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#categoryCreateModal">
                             Tambah Kategori <i class="bi bi-plus"></i>
                         </button>
 
-                        <hr>
-
                         <div class="table-responsive">
-                            {!! $dataTable->table() !!}
+                            {!! $dataTable->table(['class' => 'table table-bordered table-striped dt-responsive nowrap', 'style' => 'width:100%']) !!}
                         </div>
                     </div>
                 </div>
@@ -42,5 +42,8 @@
 @endsection
 
 @push('page_scripts')
+    <!-- JS DataTables + Responsive -->
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script>
     {!! $dataTable->scripts() !!}
 @endpush

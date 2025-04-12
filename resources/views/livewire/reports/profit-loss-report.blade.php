@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
         {{-- Purchase Returns 
         <div class="col-12 col-lg-4">
             <div class="card border-0 shadow-sm">
